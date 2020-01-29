@@ -1,16 +1,23 @@
 <ul class="nav nav-pill nav-justified">
-  <li class="nav-item ">
+    <li class="nav-item ">
       <!-- href would be replaced by [routerLink] -->
       <a class="nav-link btn-warning" [routerLink]="['/home']" >HOME</a>
-  </li>
-  <li class="nav-item">
+    </li>
+    <li class="nav-item">
       <a class="nav-link btn-primary" [routerLink]="['/contactus']">CONTACT US</a>
-  </li>
-  <li class="nav-item">
-      <a class="nav-link btn-secondary" [routerLink]="['/aboutus']">ABOUT US</a>
-  </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn-success" [routerLink]="['/aboutus']">ABOUT US</a>
+     </li>
+    <li class="nav-item" *ngIf="!auth.isUserLoggedIn()">
+    <a class="nav-link btn-info" [routerLink]="['/login']">Login</a>
+    </li>
+    <li class="nav-item" *ngIf="auth.isUserLoggedIn()">
+    <a class="nav-link btn-warning" [routerLink]="['/logout']">Logout</a>
+    </li>
 </ul>
 <hr>
 <input type="search" placeholder="search here" #search>
 <input type="button" value="search" (click)="searchData(search)">
+<hr>
 <router-outlet></router-outlet>
