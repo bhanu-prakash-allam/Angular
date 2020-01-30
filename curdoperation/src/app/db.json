@@ -1,0 +1,24 @@
+{
+    "media": [
+      {
+        "sn": 1,
+        "mediaType": "audio",
+        "extension": "MP3"
+      },
+      {
+        "sn":2,
+        "mediaType": "audio",
+        "extension": "MP3"
+      },
+      {
+        "sn":3,
+        "mediaType": "vedio",
+        "extension": "MP4"
+      },
+      {
+        "sn":4,
+        "mediaType": "video",
+        "extension": "ogg"
+      }
+    ]
+  }

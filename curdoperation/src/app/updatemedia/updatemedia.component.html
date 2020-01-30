@@ -1,0 +1,22 @@
+<div>
+    <h3>Update Media</h3>
+    <div class="row">
+      <div class="col">
+          <label for="">Media-type</label>
+        </div>
+      <div class="col">
+          <input type="text" #mediatype/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+          <label for="">extension</label>
+      </div>
+      <div class="col">
+       <input type="text" #mediaextension/>
+      </div>
+    </div>
+      <div class="row">
+          <input type="button" value="Update" (click)="updateMedia(mediatype,mediaextension)" />
+      </div>
+</div>

@@ -1,0 +1,22 @@
+<div>
+    <input type="button" value="ADD" class="btn-primary"/>
+    <hr/>
+    <table class="table">
+      <thead>
+        <th>Sn</th>
+        <th>media-type</th>
+        <th>extension</th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let med of media; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{med.mediaType}}</td>
+          <td>{{med.extension}}</td>
+          <td><input type="button" value="Update" class="btn-warning" (click) = "update(media.sn)" /></td>
+          <td><input type="button" value="Delete" class="btn-danger" (click) = "delete(media.sn)"/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
