@@ -1,0 +1,74 @@
+<div class="container mt-5">
+    <div class="row">
+        <aside class="col-sm-3 mr-10">
+            <div  class="mr-5">
+                <div class="row justify-content-center mb-4">
+                    <u><a href="acc.html">Account</a></u>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column">
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75 active">Newsfeed</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75" [routerLink]="['/blockeduser']">BlockedContacts</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75" [routerLink]="['/accountupdate']">AccountUpdate</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75" [routerLink]="['/search']">Search</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75" (click)="auth.logout()">Logout</button>
+                </div>
+            </div>         
+        </aside> 
+        <div class="col-sm-9 pl-5">
+            <div class="row mb-4">
+                <div class="col-sm-3 h5">
+                    Today
+                </div>
+                <div class="col-sm-3 h5">
+                    8:00
+                </div>
+                <div class="col-sm-6 h5">
+                    some contents are shared by you
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm-3 h5">
+                    26-6-2020
+                </div>
+                <div class="col-sm-3 h5">
+                    14:00
+                </div>
+                <div class="col-sm-6 h5">
+                    some contents are shared by you on this date
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm-3 h5">
+                    26-6-2010
+                </div>
+                <div class="col-sm-3 h5">
+                    12:00
+                </div>
+                <div class="col-sm-6 h5">
+                    some contents are shared by you on this date
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 h5">
+                    26-6-2012
+                </div>
+                <div class="col-sm-3 h5">
+                    16:00
+                </div>
+                <div class="col-sm-6 h5">
+                    some contents are shared by you on this date
+                </div>
+            </div>
+        </div>
+    </div>

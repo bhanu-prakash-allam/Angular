@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <div class="row">
+        <aside class="col-sm-3 mr-10">
+            <div  class="mr-5">
+                <div class="row justify-content-center mb-4">
+                    <u><a href="acc.html">Account</a></u>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75" [routerLink]="['/news-feed']">Newsfeed</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75 active" [routerLink]="['/blockeduser']">BlockedContacts</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75" [routerLink]="['/accountupdate']">AccountUpdate</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75">Search</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn btn-primary w-75" (click)="auth.logout()">Logout</button>
+                </div>
+            </div>
+                     
+        </aside> 
+        <section class="col-sm-9 pl-5">
+            <div class="form-group row">
+                <div class="col-sm-7">
+                    <input type="search" class="form-control form-control-sm h-100" name="search" placeholder="Search Media, Tags,Users">
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </section>
+    </div>
